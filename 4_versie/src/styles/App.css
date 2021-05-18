@@ -1,0 +1,45 @@
+body {
+  background-color: lightslategray;
+  margin: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 4rem;
+}
+
+nav {
+  margin-bottom: 4rem;
+  font-size: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: greenyellow;
+}
+
+a,
+a:focus,
+a:visited {
+  color: darksalmon;
+  outline: none;
+}
+
+.student-nav-ul .student-li {
+  width: 100px;
+}
