@@ -11,7 +11,7 @@ Dus ik ga een versie 4 maken en inleveren
 4 Commentaar van Ben Linnebank:
 React router moet erin
 Hier en daar let vervangen door const, dat gaat ook bij een array(push) goed
-  maar niet bij een reassignment
+maar niet bij een reassignment
 Hier en daar op Ctrl + s gedrukt om de formatter aan te roepen, dan ziet het er beter uit.
 Snap ik allemaal.
 
@@ -19,11 +19,13 @@ Nog een bug hersteld in graphContainter.js, als je moeilijkheid of plezier desel
 De grafiek kon niet met 'null' overweg, dat moest een rij nullen worden.
 
 Moest toch wel een en ander verbouwen en het ziet er wat primitief uit.
-Kon wel mooi de componenten verplaatsen, dat werkte heel mooi.
+Kon wel mooi de componenten verplaatsen, dat werkte goed.
 
-  <!--  -->
+5 Commentaar van Thomas Sterrenburg dat ik nog een requirement is:
+route /{naam-van-student} moet er nog in.
+Aangepast.
 
-
+<!--  -->
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
