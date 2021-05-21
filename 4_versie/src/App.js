@@ -37,8 +37,19 @@ function App() {
   const studentLinks = studentArray.map((item) => {
     return (
       <li key={item.name} onClick={handleClick} className="student-li">
-        <Link to="/SingleStudent">{item.name}</Link>
+        <Link to={`/${item.name}`}>{item.name}</Link>
       </li>
+    );
+  });
+
+  // I could create Route with :id but that messes up navigation to SelectedStudents
+  //   do no understand what exactly is going on
+  // and I could pass the student's name as a prop to SingleStudent but we'r in Redux so that's not necessary
+  const studentRoutes = studentArray.map((item) => {
+    return (
+      <Route key={item.name} path={`/${item.name}`}>
+        <SingleStudent />
+      </Route>
     );
   });
 
@@ -49,29 +60,27 @@ function App() {
         <nav className="student-links-nav">
           <ul className="student-nav-ul">
             <hr />
-            {studentLinks}
-            <hr />
-            <li>
-              <Link to="/SelectedStudents">Selecteer meerdere studenten</Link>
-            </li>
-            <hr />
             <li>
               <Link onClick={handleHome} to="/">
                 Home
               </Link>
             </li>
             <hr />
+            {studentLinks}
+            <hr />
+            <li>
+              <Link to="/SelectedStudents">Selecteer meerdere studenten</Link>
+            </li>
+            <hr />
           </ul>
         </nav>
         <main>
           <Switch>
-            <Route path="/SingleStudent">
-              <SingleStudent />
-            </Route>
+            {studentRoutes}
             <Route path="/SelectedStudents">
               <SelectedStudents />
             </Route>
-            <Route exact path="/">
+            <Route path="/">
               <Home />
             </Route>
           </Switch>
