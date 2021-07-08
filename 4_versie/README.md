@@ -21,7 +21,7 @@ De grafiek kon niet met 'null' overweg, dat moest een rij nullen worden.
 Moest toch wel een en ander verbouwen en het ziet er wat primitief uit.
 Kon wel mooi de componenten verplaatsen, dat werkte goed.
 
-5 Commentaar van Thomas Sterrenburg dat ik nog een requirement is:
+5 Commentaar van Thomas Sterrenburg dat ik nog een requirement mis:
 route /{naam-van-student} moet er nog in.
 Aangepast.
 
