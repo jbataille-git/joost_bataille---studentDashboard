@@ -1,7 +1,7 @@
-1.  eerste grafiek staat erin
-    wil een aparte component maken voor de knoppen,
-    die staan nu nog in twee verschillende componenten
-    vandaar deze tussen-opslag
+1  eerste grafiek staat erin
+wil een aparte component maken voor de knoppen,
+die staan nu nog in twee verschillende componenten
+vandaar deze tussen-opslag
 
 2
 
